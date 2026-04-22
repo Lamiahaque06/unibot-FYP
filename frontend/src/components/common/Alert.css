@@ -1,0 +1,127 @@
+/* Alert — supports both old class names and new spec names */
+
+/* ── Old class names (kept for backward compat) ─────────── */
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border-left: 4px solid;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.alert-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+}
+
+.alert-icon {
+  font-size: 1.1rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.alert-message {
+  flex: 1;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.alert-close {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 4px;
+  margin-left: 8px;
+  opacity: 0.5;
+  transition: opacity var(--transition);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.alert-close:hover { opacity: 1; }
+
+.alert-success {
+  background-color: #ECFDF5;
+  border-color: #10B981;
+  color: #065F46;
+}
+.alert-error {
+  background-color: #FFF1F2;
+  border-color: #F43F5E;
+  color: #9F1239;
+}
+.alert-warning {
+  background-color: #FFFBEB;
+  border-color: #F59E0B;
+  color: #92400E;
+}
+.alert-info {
+  background-color: #EEF2FF;
+  border-color: #6366F1;
+  color: #3730A3;
+}
+
+/* ── New spec class names ────────────────────────────────── */
+.alert--success {
+  background-color: #ECFDF5;
+  border-color: #10B981;
+  color: #065F46;
+}
+.alert--error {
+  background-color: #FFF1F2;
+  border-color: #F43F5E;
+  color: #9F1239;
+}
+.alert--warning {
+  background-color: #FFFBEB;
+  border-color: #F59E0B;
+  color: #92400E;
+}
+.alert--info {
+  background-color: #EEF2FF;
+  border-color: #6366F1;
+  color: #3730A3;
+}
+
+.alert__icon {
+  font-size: 1.1rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.alert__content { flex: 1; }
+
+.alert__title {
+  font-size: .875rem;
+  font-weight: 700;
+  margin: 0 0 3px;
+}
+
+.alert__message {
+  font-size: .8125rem;
+  line-height: 1.5;
+  margin: 0;
+  opacity: .9;
+}
+
+.alert__close {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 4px;
+  opacity: 0.5;
+  transition: opacity var(--transition);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.alert__close:hover { opacity: 1; }

@@ -1,0 +1,58 @@
+.loading {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+}
+
+/* Ring sizes */
+.loading--sm .loading__ring { width: 20px; height: 20px; }
+.loading--md .loading__ring { width: 32px; height: 32px; }
+.loading--lg .loading__ring { width: 48px; height: 48px; }
+
+.loading__ring {
+  display: inline-flex; align-items: center; justify-content: center;
+}
+
+/* CSS-only spinner ring */
+.loading__ring::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid rgba(99,102,241,0.15);
+  border-top-color: #6366F1;
+  animation: spin 0.85s linear infinite;
+}
+
+/* SVG-based ring (if used) */
+.loading__ring svg { animation: spin 1s linear infinite; }
+.loading--sm .loading__ring svg { width: 20px; height: 20px; }
+.loading--md .loading__ring svg { width: 32px; height: 32px; }
+.loading--lg .loading__ring svg { width: 48px; height: 48px; }
+
+/* Tint SVG strokes to indigo */
+.loading__ring svg circle {
+  stroke: rgba(99,102,241,0.15);
+}
+.loading__ring svg path {
+  stroke: #6366F1;
+}
+
+.loading__text {
+  font-size: .875rem; color: #6B7280; font-weight: 500;
+}
+
+/* Overlay */
+.loading-overlay {
+  position: fixed; inset: 0; z-index: 9000;
+  background: rgba(255,255,255,0.90);
+  backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+}
+
+.loading-overlay__content {
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+}
+
+.loading-overlay__text {
+  font-size: .9375rem; font-weight: 500; color: #374151;
+}

@@ -1,0 +1,22 @@
+.badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--font-body); font-weight: 600;
+  border-radius: 6px; line-height: 1;
+  white-space: nowrap; letter-spacing: 0.02em;
+}
+.badge--sm  { font-size: .7rem;    padding: 3px 8px; }
+.badge--md  { font-size: .75rem;   padding: 4px 10px; }
+.badge--lg  { font-size: .8125rem; padding: 5px 12px; }
+
+.badge--default { background: #F3F4F6; color: #374151; }
+.badge--primary { background: #EEF2FF; color: #4F46E5; }
+.badge--success { background: #ECFDF5; color: #059669; }
+.badge--warning { background: #FFFBEB; color: #D97706; }
+.badge--danger  { background: #FFF1F2; color: #E11D48; }
+.badge--purple  { background: #F5F3FF; color: #7C3AED; }
+.badge--dark    { background: #111827; color: #F9FAFB; }
+
+.badge__dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: currentColor; flex-shrink: 0;
+}

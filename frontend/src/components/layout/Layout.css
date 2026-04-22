@@ -1,0 +1,30 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #FAFAFA;
+}
+
+.layout__main {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.layout__content {
+  min-height: 100vh;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+@media (max-width: 768px) {
+  .layout__content { padding: 20px 16px; }
+  .page-container  { padding: 20px 16px; }
+}
